@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>payviaepul</name>
+    <displayName><![CDATA[PayViaEpul]]></displayName>
+    <version><![CDATA[1.0]]></version>
+    <description><![CDATA[Accept payments with E-PUL]]></description>
+    <author><![CDATA[E-PUL]]></author>
+    <tab><![CDATA[payments_gateways]]></tab>
+    <confirmUninstall>Are you sure you want to delete your details?</confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <limited_countries></limited_countries>
+</module>
