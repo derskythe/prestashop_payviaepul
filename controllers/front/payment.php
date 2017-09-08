@@ -66,8 +66,10 @@ class PayViaEpulPaymentModuleFrontController extends ModuleFrontController
             $this->module->addToLog($exp->getMessage(), 4);
         }
 
-        Tools::displayError($this->module->l(
-            'Sorry, can\'t make payment! Please contact to the shop administrator',
-            PayViaEpul::MODULE_NAME));
+        if ($this->module->getPsVersion() === PayViaEpul::V17) {
+            $this->setTemplate('module:' . PayViaEpul::MODULE_NAME . '/views/templates/front/error_creating17.tpl');
+        } else {
+            $this->setTemplate('error_creating.tpl');
+        }
     }
 }
